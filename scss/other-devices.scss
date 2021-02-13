@@ -41,14 +41,13 @@
     }
 
     .posts {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       .post {
         margin: auto;
         margin-bottom: 15px;
-        margin-right: 0px;
-        margin-left: 0px;
+
+        &:nth-child(odd) {
+          margin-right: 15px;
+        }
       }
 
       .other-post {
@@ -83,8 +82,8 @@
   }
 
   footer {
-    width: 768px;
     margin: auto;
+    width: 768px;
 
     img.hr {
       width: 768px;
@@ -93,14 +92,5 @@
       margin-bottom: 29px;
       padding-bottom: 29px;
     }
-  }
-
-  .pagination {
-    width: 768px;
-    margin: auto;
-  }
-  .widget-footer {
-    width: 768px;
-    margin: auto;
   }
 }
